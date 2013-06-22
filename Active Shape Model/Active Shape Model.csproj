@@ -1,0 +1,164 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{860137D5-8CFA-4ADB-B181-B1C50264036C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Active_Shape_Model</RootNamespace>
+    <AssemblyName>Active Shape Model</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Imaging, Version=1.3.0.0, Culture=neutral, PublicKeyToken=38eb47741dd0492e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=1.3.0.0, Culture=neutral, PublicKeyToken=e12ceb15b47eb5cc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="MACTrackBarLib, Version=1.0.2720.36979, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MACTrackBarLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CAboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAboutForm.Designer.cs">
+      <DependentUpon>CAboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CFPSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CFPSForm.Designer.cs">
+      <DependentUpon>CFPSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMain.cs" />
+    <Compile Include="CMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMainForm.designer.cs">
+      <DependentUpon>CMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSettingsForm.Designer.cs">
+      <DependentUpon>CSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CAboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CAboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CFPSForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CFPSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBackward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonForward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonGoToFirst.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonGoToLast.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonPause.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonPlay.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonStop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASMLibrary\ASMLibrary.csproj">
+      <Project>{3783BD54-2F33-4283-8457-686EC71843B4}</Project>
+      <Name>ASMLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InputSource\InputSource.csproj">
+      <Project>{CB7165C7-42C4-4438-8847-A40E08AB7DD2}</Project>
+      <Name>InputSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LinearAlgebra\LinearAlgebra.csproj">
+      <Project>{28115EDC-C596-41AF-A114-C3ECDBD489BB}</Project>
+      <Name>LinearAlgebra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

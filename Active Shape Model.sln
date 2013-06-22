@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASMLibrary", "ASMLibrary\ASMLibrary.csproj", "{3783BD54-2F33-4283-8457-686EC71843B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training Set Builder", "Training Set Builder\Training Set Builder.csproj", "{309CB698-FAF2-4C5C-B2D3-307DFE6E8767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Active Shape Model", "Active Shape Model\Active Shape Model.csproj", "{860137D5-8CFA-4ADB-B181-B1C50264036C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearAlgebra", "LinearAlgebra\LinearAlgebra.csproj", "{28115EDC-C596-41AF-A114-C3ECDBD489BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTester", "LibraryTester\LibraryTester.csproj", "{B9E8E4E3-BC5C-4431-9431-5D09167FDF9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputSource", "InputSource\InputSource.csproj", "{CB7165C7-42C4-4438-8847-A40E08AB7DD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3783BD54-2F33-4283-8457-686EC71843B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3783BD54-2F33-4283-8457-686EC71843B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3783BD54-2F33-4283-8457-686EC71843B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3783BD54-2F33-4283-8457-686EC71843B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{309CB698-FAF2-4C5C-B2D3-307DFE6E8767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309CB698-FAF2-4C5C-B2D3-307DFE6E8767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309CB698-FAF2-4C5C-B2D3-307DFE6E8767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309CB698-FAF2-4C5C-B2D3-307DFE6E8767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{860137D5-8CFA-4ADB-B181-B1C50264036C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{860137D5-8CFA-4ADB-B181-B1C50264036C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{860137D5-8CFA-4ADB-B181-B1C50264036C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{860137D5-8CFA-4ADB-B181-B1C50264036C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28115EDC-C596-41AF-A114-C3ECDBD489BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28115EDC-C596-41AF-A114-C3ECDBD489BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28115EDC-C596-41AF-A114-C3ECDBD489BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28115EDC-C596-41AF-A114-C3ECDBD489BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E8E4E3-BC5C-4431-9431-5D09167FDF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E8E4E3-BC5C-4431-9431-5D09167FDF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E8E4E3-BC5C-4431-9431-5D09167FDF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E8E4E3-BC5C-4431-9431-5D09167FDF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB7165C7-42C4-4438-8847-A40E08AB7DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB7165C7-42C4-4438-8847-A40E08AB7DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB7165C7-42C4-4438-8847-A40E08AB7DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB7165C7-42C4-4438-8847-A40E08AB7DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

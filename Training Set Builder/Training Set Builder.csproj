@@ -1,0 +1,224 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{309CB698-FAF2-4C5C-B2D3-307DFE6E8767}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Training_Set_Builder</RootNamespace>
+    <AssemblyName>Training Set Builder</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CAboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAboutForm.designer.cs">
+      <DependentUpon>CAboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CClippingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CClippingForm.designer.cs">
+      <DependentUpon>CClippingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CDetailedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDetailedForm.designer.cs">
+      <DependentUpon>CDetailedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CDoTraining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDoTraining.Designer.cs">
+      <DependentUpon>CDoTraining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CDoubleBufferedComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CMain.cs" />
+    <Compile Include="CMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMainForm.designer.cs">
+      <DependentUpon>CMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CNewProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNewProjectForm.designer.cs">
+      <DependentUpon>CNewProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSampleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSampleEditor.designer.cs">
+      <DependentUpon>CSampleEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSampleListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSampleListForm.designer.cs">
+      <DependentUpon>CSampleListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTrainingResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTrainingResult.Designer.cs">
+      <DependentUpon>CTrainingResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CAboutForm.resx">
+      <DependentUpon>CAboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CClippingForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CClippingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDetailedForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CDetailedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDoTraining.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CDoTraining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CNewProjectForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CNewProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSampleEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CSampleEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSampleListForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CSampleListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTrainingResult.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CTrainingResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonbackward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonforward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttongotofirst.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttongotolast.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonNew.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonOpen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonRemoveImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonSave.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonAddImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASMLibrary\ASMLibrary.csproj">
+      <Project>{3783BD54-2F33-4283-8457-686EC71843B4}</Project>
+      <Name>ASMLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LinearAlgebra\LinearAlgebra.csproj">
+      <Project>{28115EDC-C596-41AF-A114-C3ECDBD489BB}</Project>
+      <Name>LinearAlgebra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonPointer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonLineTool.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pointerToolsZoom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pointerToolsHand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
